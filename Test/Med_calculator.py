@@ -5,14 +5,14 @@ class Selection_of_dosage:
 
     def medicines(self):
         self.weight = float(input('Введите вес Собаки (в кг)'))
-        return self.ivermektin(), self.Alben()
+        return self.ivermektin(), self.alben()
 
     def ivermektin(self):
         return (
             f"Ивермек = {0.02 * self.weight}мл;\nПроизводитель не рекомендует использовать раствор для инъекций для собак и кошек.\n"
             f"Изначально он предназначался для свиней, лошадей, овец и крупного рогатого скота.")
 
-    def Alben(self):
+    def alben(self):
         return f'Alben = {10 * self.weight}мг'
 
 
